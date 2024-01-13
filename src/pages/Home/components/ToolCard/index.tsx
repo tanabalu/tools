@@ -29,6 +29,7 @@
 
 // export default ToolCard;
 
+import { history } from 'umi';
 import styles from './index.less';
 
 const randomGradient = () => {
@@ -48,7 +49,7 @@ const ToolCard = ({ name, description, link, image }: ITooCardProps) => {
   const backgroundImage = image ? `url(${image})` : randomGradient(); // 设置背景图或渐变色
 
   return (
-    <div className={styles.card} onClick={() => window.location.href = link}>
+    <div className={styles.card} onClick={() => history.push(link)}>
       <div className={styles.image} style={{ backgroundImage }} />
       <div className={styles.details}>
         <h2 className={styles.title}>{name}</h2>
