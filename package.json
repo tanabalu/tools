@@ -4,6 +4,7 @@
   "scripts": {
     "dev": "umi dev",
     "build": "umi build",
+    "deploy": "gh-pages -d dist",
     "postinstall": "umi setup",
     "setup": "umi setup",
     "start": "npm run dev"
