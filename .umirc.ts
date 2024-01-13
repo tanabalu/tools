@@ -5,5 +5,7 @@ export default defineConfig({
     { path: "/", component: "Home" },
     { path: "/speechToText", component: "SpeechToText" },
   ],
-  npmClient: 'pnpm',
+  npmClient: 'npm',
+  history: { type: 'hash' },
+  hash: true,
 });
