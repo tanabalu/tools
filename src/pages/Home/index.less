@@ -1,0 +1,72 @@
+.app {
+  text-align: center;
+  background: #e0e5ec;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: 'Arial', sans-serif;
+}
+
+.header {
+  background: #e0e5ec; /* 背景色 */
+  border-radius: 20px; /* 圆角 */
+  margin: 20px auto; /* 居中显示，上下有间距 */
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* 平滑变换效果 */
+  cursor: pointer; /* 鼠标悬停时显示手型指针 */
+}
+
+.header:hover {
+  transform: translateY(-10px) scale(1.05); /* 鼠标悬停时向上移动并稍微放大 */
+  // box-shadow:
+  //   0 20px 30px rgba(0, 0, 0, 0.2), /* 较大的阴影模拟深度 */
+  //   0 10px 10px rgba(0, 0, 0, 0.1); /* 较小的阴影模拟深度 */
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2em; /* 标题字体大小 */
+  color: #333;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* 文字阴影效果 */
+  user-select: none; /* 防止标题文字被选中 */
+}
+
+// .header {
+//   // background-color: #fff;
+//   padding: 20px;
+//   width: 100%;
+//   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+// }
+
+// .header h1 {
+//   margin: 0;
+// }
+
+// .toolList {
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: center;
+//   padding: 20px;
+// }
+
+// @media (max-width: 768px) {
+//   .toolList {
+//     flex-direction: column;
+//   }
+// }
+
+.toolList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* 使用 space-around 或 space-between */
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .toolList {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,22 @@
+.speech-to-text-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* 使用视口高度，使容器全屏 */
+}
+
+.transcript-container {
+  flex: 1; /* 允许内容区域填充剩余空间 */
+  padding: 20px;
+  overflow-y: auto; /* 添加滚动条 */
+  border: 1px solid #ddd;
+}
+
+.controls-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  position: fixed; /* 固定在底部 */
+  width: 100%;
+  bottom: 30px;
+}

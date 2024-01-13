@@ -1,0 +1,125 @@
+// .card {
+//   background: #e0e5ec;
+//   border-radius: 20px;
+//   box-shadow: 8px 8px 15px #a3b1c6,
+//               -8px -8px 15px #ffffff;
+//   padding: 20px;
+//   width: 200px;
+//   cursor: pointer;
+//   transition: transform 0.3s ease;
+//   margin: 10px;
+//   text-align: center;
+//   background-size: cover;
+//   background-position: center;
+//   color: white; /* 如果使用渐变背景，文字颜色可能需要调整以确保可读性 */
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: flex-end; /* 将文本内容推向底部 */
+// }
+
+// .card:hover {
+//   transform: translateY(-10px);
+// }
+
+// .card h2 {
+//   color: #333;
+//   margin: 0 0 10px 0;
+// }
+
+// .card p {
+//   color: #555;
+//   font-size: 0.9em;
+// }
+
+// .card {
+//   background: #e0e5ec;
+//   border-radius: 20px;
+//   box-shadow: 8px 8px 15px #a3b1c6,
+//               -8px -8px 15px #ffffff;
+//   cursor: pointer;
+//   overflow: hidden; /* 防止图片溢出卡片 */
+//   margin: 10px;
+//   transition: transform 0.3s ease;
+// }
+
+// .card:hover {
+//   transform: translateY(-10px);
+// }
+
+// .image {
+//   width: 100%;
+//   height: 150px; /* 设置图片的高度 */
+//   background-size: cover;
+//   background-position: center;
+// }
+
+// .details {
+//   padding: 20px;
+// }
+
+// .title {
+//   color: #333;
+//   margin: 0;
+//   margin-bottom: 10px; /* 在标题和描述之间添加间隔 */
+// }
+
+// .description {
+//   color: #555;
+//   font-size: 0.9em;
+// }
+
+
+.card {
+  background: #e0e5ec;
+  border-radius: 20px;
+  box-shadow: 8px 8px 15px #a3b1c6,
+              -8px -8px 15px #ffffff;
+  cursor: pointer;
+  overflow: hidden; /* 防止图片溢出卡片 */
+  margin: 10px;
+  transition: transform 0.3s ease;
+  width: 300px; /* 设置最佳固定宽度 */
+
+  flex: 1; /* 使卡片能够在容器内伸展 */
+  margin: 20px 10px; /* 提供一点间距，保持卡片之间的空间 */
+  /* 弹性布局属性 */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 300px; /* 设置卡片的最小宽度 */
+  max-width: 300px; /* 设置卡片的最大宽度 */
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.image {
+  width: 100%;
+  height: 150px; /* 设置图片的高度 */
+  background-size: cover;
+  background-position: center;
+}
+
+.details {
+  padding: 20px;
+}
+
+.title {
+  color: #333;
+  margin: 0;
+  margin-bottom: 10px; /* 在标题和描述之间添加间隔 */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; /* 超长文本省略 */
+}
+
+.description {
+  color: #555;
+  font-size: 0.9em;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* 描述显示行数限制为3行 */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis; /* 超长文本省略 */
+}
